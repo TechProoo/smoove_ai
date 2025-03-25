@@ -38,7 +38,6 @@ const Sidebar: React.FC<SidebarProps> = ({ sendQues }) => {
         onClick={() => toggleDrawer(true)}
         sx={{
           minWidth: "unset",
-          backgroundColor: "#ECDFCC !important",
           color: "#181C14",
           padding: "12px !important",
         }}

@@ -1,4 +1,4 @@
-import { Send } from "lucide-react";
+import { CirclePlus, Send } from "lucide-react";
 import "./App.css";
 import Image from "../src/Images/techPro.png";
 import User from "../src/Images/user.png";
@@ -9,6 +9,7 @@ import { useState, useRef, useEffect } from "react";
 import { marked } from "marked";
 import { getRandomQuestions } from "./questions";
 import TemporaryDrawer from "./Components/Drawer";
+import { Button } from "@mui/material";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -90,9 +91,12 @@ function App() {
     <div className="h-[100vh] overflow-hidden w-[100%]">
       <div
         style={{ zIndex: "1" }}
-        className="absolute left-0 top-0 w-[100%] flex items-center bg-stone-200  md:hidden"
+        className="absolute left-0 top-0 w-[100%] flex items-center justify-between pr-2 bg-stone-200  md:hidden"
       >
         <TemporaryDrawer sendQues={sendQues} />
+        <Button style={{color: "#3C3D37"}} onClick={newChat}>
+          <CirclePlus />
+        </Button>
       </div>
       <div className="grid grid-cols-12">
         <div
