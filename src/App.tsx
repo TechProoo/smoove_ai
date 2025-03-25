@@ -168,29 +168,7 @@ function App() {
                 asking something!
               </p>
 
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <div className="flex md:m-[17px] items-center bg-[#181C14] p-3 rounded-xl w-[100%]">
-                  <input
-                    value={prompt}
-                    onChange={(e) => setPrompt(e.target.value)}
-                    type="text"
-                    placeholder="Message to SmooveAI"
-                    className="flex-1 bg-transparent text-[#ffdab3] placeholder-[#ffdab3] outline-none px-2"
-                  />
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="ml-3 bg-[#ffdab3] p-2 rounded-full hover:bg-purple-500"
-                    onClick={sendPrompt}
-                  >
-                    <Send size={20} className="text-[#181C14]" />
-                  </motion.button>
-                </div>
-                <p className="text-xs text-center text-gray-600 mt-2">
-                  SmooveAI helps you learn programming step by step—practice and
-                  curiosity will make you even better!
-                </p>
-              </div>
+              
             </motion.div>
           )}
 
