@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --bg-main: #3C3D37;
+  --bg-light: #ECDFCC;
+  --bg-text: #ECDFCC;
+}
+
+body {
+  background-color: var(--bg-main);
+  font-family: "Platypi", serif;
+}
+
+.logo p {
+  color: var(--bg-text);
+}
+
+.new_chart {
+  width: 90%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #697565;
+  color: #181C14;
+  font-weight: bolder;
+}
+
+.random_pinned_btn {
+  width: 90%;
+  border-radius: 10px;
+  background-color: var(--bg-text);
+  /* font-weight: bol; */
+}
+
+.css-1tktgsa-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+  background-color: #181C14 !important;
+}
+
+.history {
+  height: 225px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.message_cover {
+  overflow-y: auto;
+  word-wrap: break-word;
+  scroll-behavior: smooth;
+}
+
+.mss {
+  overflow-x: scroll;
+}
+
+.mss::-webkit-scrollbar {
+  display: none;
+}
+
+.message_cover::-webkit-scrollbar {
+  display: none;
+}
+
+.ai {
+  background-color: #181C14;
+  padding: 17px;
+  border-radius: 15px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.ai::-webkit-scrollbar {
+  display: none;
+}
+
+.user {
+  padding: 17px;
+}
+
+.question_txt {
+  color: #28212e;
+  font-size: 16px;
+}
+
+.ans_text {
+  font-size: 16px;
+}
+
+/* From Uiverse.io by milley69 */
+.loading svg polyline {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.loading svg polyline#back {
+  fill: none;
+  stroke: #ff4d5033;
+}
+
+.loading svg polyline#front {
+  fill: none;
+  stroke: #ff4d4f;
+  stroke-dasharray: 48, 144;
+  stroke-dashoffset: 192;
+  animation: dash_682 1.4s linear infinite;
+}
+
+@keyframes dash_682 {
+  72.5% {
+    opacity: 0;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}

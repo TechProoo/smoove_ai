@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.border-r {
+  border-color: var(--bg-text) ;
+}
+
+.col-span-2 {
+  width: 110%;
+}
+
+.col-span-10 {
+  width: 100%;
+  margin: auto;
+}
+
+button {
+  transition: .3s;
+  cursor: pointer;
+}
+
+small {
+  color: var(--bg-text);
+}
+
+button:hover {
+  background-color: #ECDFCC !important;
+}
+
+.css-14d3tmw-MuiButtonBase-root-MuiButton-root {
+  min-width: 100% !important;
+}
