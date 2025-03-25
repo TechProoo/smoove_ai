@@ -202,7 +202,7 @@ function App() {
                 alt="Built By"
               />
             </div>
-            <div className="md:h-[93vh] h-[100vh] md:mt-10 md:w-[75%] message_cover m-auto md:p-8 p-3 relative">
+            <div className="md:h-[93vh] h-[100vh] mt-10 md:w-[75%] message_cover m-auto md:p-8 p-3 relative">
               <div className="message_cover md:h-[400px] h-[78vh] overflow-y-auto">
                 {messages.map((msg, index) => (
                   <motion.div
