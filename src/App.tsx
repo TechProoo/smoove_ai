@@ -88,7 +88,7 @@ function App() {
   };
 
   return (
-    <div className="h-[100%] overflow-hidden w-[100%]">
+    <div className="h-[100vh] overflow-hidden w-[100%]">
       <div
         style={{ zIndex: "1" }}
         className="fixed left-0 top-0 w-[100%] flex items-center justify-between pr-2 bg-stone-200  md:hidden"
