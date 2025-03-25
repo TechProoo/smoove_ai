@@ -16,7 +16,7 @@ function App() {
     { sender: "user" | "ai"; text: string }[]
   >([]);
   const [prompt, setPrompt] = useState("");
-  const [qlevel, setqLevel] = useState<"beginner" | "advanced">("beginner");
+  const qlevel = "beginner";
 
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
@@ -237,7 +237,39 @@ function App() {
                   </motion.div>
                 ))}
 
-                {/* Invisible div for auto-scroll */}
+                {loading && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className="flex items-center justify-center gap-2 my-4"
+                  >
+                    <svg
+                      className="animate-spin h-6 w-6 text-[#ffdab3]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                      ></circle>
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8v8H4z"
+                      ></path>
+                    </svg>
+                    <p className="text-[#ffdab3] text-lg font-medium">
+                      Thinking...
+                    </p>
+                  </motion.div>
+                )}
+
                 <div ref={messagesEndRef} />
               </div>
 
