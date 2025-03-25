@@ -255,7 +255,7 @@ function App() {
                 <div ref={messagesEndRef} />
               </div>
 
-              <div className="fixed bg-[#3C3D37] bottom-0 left-0 right-0 p-4">
+              <div className="fixed bg-[#3C3D37] w-[100%] bottom-0 left-0 right-0 p-4">
                 <div className="flex md:m-[17px] items-center bg-[#181C14] p-3 rounded-xl w-[100%]">
                   <input
                     value={prompt}
