@@ -206,7 +206,7 @@ function App() {
                 alt="Built By"
               />
             </div>
-            <div className="md:h-[93vh] h-[100vh] mt-10 md:w-[75%] message_cover m-auto md:p-8 p-3 relative">
+            <div className="md:h-[93vh] h-[100vh] mt-10 mb-20 md:w-[75%] message_cover m-auto md:p-8 p-3 relative">
               <div className="message_cover md:h-[400px] h-[78vh] overflow-y-auto">
                 {messages.map((msg, index) => (
                   <motion.div
@@ -277,7 +277,7 @@ function App() {
                 <div ref={messagesEndRef} />
               </div>
 
-              <div className="absolute bottom-0 left-0 right-0 p-4">
+              <div className="fixed bottom-0 left-0 right-0 p-4">
                 <div className="flex md:m-[17px] items-center bg-[#181C14] p-3 rounded-xl w-[100%]">
                   <input
                     value={prompt}
